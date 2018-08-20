@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LuatChoiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/lai_van_sam" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn5050"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/support_1" />
+
+                <ImageButton
+                    android:id="@+id/btnGoiDien"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/support_2" />
+
+                <ImageButton
+                    android:id="@+id/btnKhanGia"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/support_3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtCau15"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="15\t\t150.000"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/txtCau14"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="14\t\t85.000"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCau13"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="13\t\t60.000"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCau12"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="12\t\t40.000"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCau11"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="11\t\t30.000"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCau10"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="10\t\t22.000"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/txtCau09"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="09\t\t14.000"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCau08"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="08\t\t10.000"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCau07"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="07\t\t6.000"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCau06"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="06\t\t3.000"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCau05"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="05\t\t2.000"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/txtCau04"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="04\t\t1.000"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCau03"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="03\t\t600"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCau02"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="02\t\t400"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txtCau01"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="01\t\t200"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/chatbox"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNoiDung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnChuyenTiep"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/sub_button"
+            android:text="Chuyển tiếp" />
+
+        <Button
+            android:id="@+id/btnChoiLuon"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/sub_button"
+            android:text="Chơi luôn" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnBatDauChoi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button"
+        android:onClick="thucHienBatDauChoi"
+        android:text="Bắt đầu chơi"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnDiemCao"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button"
+        android:onClick="thucHienXemDiemCao"
+        android:text="Điểm cao"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnTuyChinh"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button"
+        android:onClick="thucHienTuyChinh"
+        android:text="Tùy chỉnh"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnThoat"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button"
+        android:onClick="thucHienThoat"
+        android:text="Thoát"
+        android:textColor="@android:color/white" />
+</LinearLayout>
