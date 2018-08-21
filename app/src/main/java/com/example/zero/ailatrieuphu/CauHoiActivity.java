@@ -81,12 +81,12 @@ public class CauHoiActivity extends AppCompatActivity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            txtThoiGian.setText(simpleDateFormat.format(calendar.getTime()) + "");
-                            calendar.add(Calendar.MILLISECOND, 2);
+                            txtThoiGian.setText(simpleDateFormat.format(calendar.getTime()));
+                            calendar.add(Calendar.MILLISECOND, 20);
                         }
                     });
                 }
-            }, 0, 1);
+            }, 0, 20);
         }
     }
 
@@ -511,7 +511,7 @@ public class CauHoiActivity extends AppCompatActivity {
                                 @Override
                                 public void onClick(View view) {
                                     dialog.cancel();
-                                    onBackPressed();
+                                    finish();
                                 }
                             });
                             btnXacNhan.setOnClickListener(new View.OnClickListener() {
@@ -520,7 +520,7 @@ public class CauHoiActivity extends AppCompatActivity {
                                     helperScore.insertDiem(txtHoTen.getText().toString(), diemThuong, thuTuCauHoi, simpleDateFormat.format(calendar.getTime()));
                                     Toast.makeText(CauHoiActivity.this, "Lưu điểm thành công.", Toast.LENGTH_LONG).show();
                                     dialog.cancel();
-                                    onBackPressed();
+                                    finish();
                                 }
                             });
                             dialog.show();
@@ -572,8 +572,8 @@ public class CauHoiActivity extends AppCompatActivity {
             if (btnDapAnA.isEnabled()) {
                 if (dapAn == 'A') dsPhanTramDapAn[0] = (int) Math.round(max/tong*10000.0);
                 else {
-                    int viTriLay = random.nextInt(4);
-                    while (dsViTriDaLay.contains(viTriLay)) viTriLay = random.nextInt(4);
+                    int viTriLay = random.nextInt(dsPhanVan.size());
+                    while (dsViTriDaLay.contains(viTriLay)) viTriLay = random.nextInt(dsPhanVan.size());
                     double phanTuLay = (double)dsPhanVan.get(viTriLay);
                     dsPhanTramDapAn[0] = (int) Math.round(phanTuLay/tong*10000.0);
                     dsViTriDaLay.add(viTriLay);
@@ -583,8 +583,8 @@ public class CauHoiActivity extends AppCompatActivity {
             if (btnDapAnB.isEnabled()) {
                 if (dapAn == 'B') dsPhanTramDapAn[1] = (int) Math.round(max/tong*10000.0);
                 else {
-                    int viTriLay = random.nextInt(4);
-                    while (dsViTriDaLay.contains(viTriLay)) viTriLay = random.nextInt(4);
+                    int viTriLay = random.nextInt(dsPhanVan.size());
+                    while (dsViTriDaLay.contains(viTriLay)) viTriLay = random.nextInt(dsPhanVan.size());
                     double phanTuLay = (double)dsPhanVan.get(viTriLay);
                     dsPhanTramDapAn[1] = (int) Math.round(phanTuLay/tong*10000.0);
                     dsViTriDaLay.add(viTriLay);
@@ -594,8 +594,8 @@ public class CauHoiActivity extends AppCompatActivity {
             if (btnDapAnC.isEnabled()) {
                 if (dapAn == 'C') dsPhanTramDapAn[2] = (int) Math.round(max/tong*10000.0);
                 else {
-                    int viTriLay = random.nextInt(4);
-                    while (dsViTriDaLay.contains(viTriLay)) viTriLay = random.nextInt(4);
+                    int viTriLay = random.nextInt(dsPhanVan.size());
+                    while (dsViTriDaLay.contains(viTriLay)) viTriLay = random.nextInt(dsPhanVan.size());
                     double phanTuLay = (double)dsPhanVan.get(viTriLay);
                     dsPhanTramDapAn[2] = (int) Math.round(phanTuLay/tong*10000.0);
                     dsViTriDaLay.add(viTriLay);
@@ -605,8 +605,8 @@ public class CauHoiActivity extends AppCompatActivity {
             if (btnDapAnD.isEnabled()) {
                 if (dapAn == 'D') dsPhanTramDapAn[3] = (int) Math.round(max/tong*10000.0);
                 else {
-                    int viTriLay = random.nextInt(4);
-                    while (dsViTriDaLay.contains(viTriLay)) viTriLay = random.nextInt(4);
+                    int viTriLay = random.nextInt(dsPhanVan.size());
+                    while (dsViTriDaLay.contains(viTriLay)) viTriLay = random.nextInt(dsPhanVan.size());
                     double phanTuLay = (double)dsPhanVan.get(viTriLay);
                     dsPhanTramDapAn[3] = (int) Math.round(phanTuLay/tong*10000.0);
                 }
@@ -1114,7 +1114,7 @@ public class CauHoiActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 dialog.cancel();
-                onBackPressed();
+                finish();
             }
         });
         btnXacNhan.setOnClickListener(new View.OnClickListener() {
@@ -1123,7 +1123,7 @@ public class CauHoiActivity extends AppCompatActivity {
                 helperScore.insertDiem(txtHoTen.getText().toString(), diemThuong, thuTuCauHoi, simpleDateFormat.format(calendar.getTime()));
                 Toast.makeText(CauHoiActivity.this, "Lưu điểm thành công.", Toast.LENGTH_LONG).show();
                 dialog.cancel();
-                onBackPressed();
+                finish();
             }
         });
         dialog.show();
@@ -1153,7 +1153,7 @@ public class CauHoiActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 dialog.cancel();
-                onBackPressed();
+                finish();
             }
         });
         btnXacNhan.setOnClickListener(new View.OnClickListener() {
@@ -1162,7 +1162,7 @@ public class CauHoiActivity extends AppCompatActivity {
                 helperScore.insertDiem(txtHoTen.getText().toString(), diemThuong, 15, simpleDateFormat.format(calendar.getTime()));
                 Toast.makeText(CauHoiActivity.this, "Lưu điểm thành công.", Toast.LENGTH_LONG).show();
                 dialog.cancel();
-                onBackPressed();
+                finish();
             }
         });
         dialog.show();
@@ -1205,6 +1205,7 @@ public class CauHoiActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
+        stopCounting();
         playerTheme.stopPlayer();
         playerEffect.stopPlayer();
         playerSoundEffect.pausePlayer();
@@ -1227,8 +1228,14 @@ public class CauHoiActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        stopCounting();
+    }
+
+    @Override
     protected void onDestroy() {
-        startCounting();
+        stopCounting();
         if (selectedButton != null) {
             if (selectedButton.getText().toString().substring(3).equals(cauHoi.getCauTraLoi())) {
                 thuTuCauHoi++;

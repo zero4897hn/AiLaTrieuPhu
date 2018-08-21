@@ -9,7 +9,6 @@
     android:orientation="vertical"
     tools:context=".LuatChoiActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +37,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center_horizontal"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="4">
 
                 <ImageButton
                     android:id="@+id/btn5050"
@@ -46,6 +46,7 @@
                     android:layout_height="25dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
+                    android:layout_weight="1"
                     android:background="@null"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/support_1" />
@@ -56,6 +57,7 @@
                     android:layout_height="25dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
+                    android:layout_weight="1"
                     android:background="@null"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/support_2" />
@@ -66,6 +68,7 @@
                     android:layout_height="25dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
+                    android:layout_weight="1"
                     android:background="@null"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/support_3" />
@@ -76,15 +79,17 @@
                     android:layout_height="25dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
+                    android:layout_weight="1"
                     android:background="@null"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/support_4" />
+
             </LinearLayout>
 
             <TextView
                 android:id="@+id/txtCau15"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="15\t\t150.000"
@@ -93,7 +98,7 @@
             <TextView
                 android:id="@+id/txtCau14"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="14\t\t85.000"
@@ -102,7 +107,7 @@
             <TextView
                 android:id="@+id/txtCau13"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="13\t\t60.000"
@@ -111,7 +116,7 @@
             <TextView
                 android:id="@+id/txtCau12"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="12\t\t40.000"
@@ -120,7 +125,7 @@
             <TextView
                 android:id="@+id/txtCau11"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="11\t\t30.000"
@@ -129,7 +134,7 @@
             <TextView
                 android:id="@+id/txtCau10"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="10\t\t22.000"
@@ -138,7 +143,7 @@
             <TextView
                 android:id="@+id/txtCau09"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="09\t\t14.000"
@@ -147,7 +152,7 @@
             <TextView
                 android:id="@+id/txtCau08"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="08\t\t10.000"
@@ -156,7 +161,7 @@
             <TextView
                 android:id="@+id/txtCau07"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="07\t\t6.000"
@@ -165,7 +170,7 @@
             <TextView
                 android:id="@+id/txtCau06"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="06\t\t3.000"
@@ -174,7 +179,7 @@
             <TextView
                 android:id="@+id/txtCau05"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="05\t\t2.000"
@@ -183,7 +188,7 @@
             <TextView
                 android:id="@+id/txtCau04"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="04\t\t1.000"
@@ -192,7 +197,7 @@
             <TextView
                 android:id="@+id/txtCau03"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="03\t\t600"
@@ -201,7 +206,7 @@
             <TextView
                 android:id="@+id/txtCau02"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
+                android:layout_height="22dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="02\t\t400"
@@ -210,8 +215,8 @@
             <TextView
                 android:id="@+id/txtCau01"
                 android:layout_width="match_parent"
-                android:layout_height="23dp"
-                android:layout_marginBottom="5dp"
+                android:layout_height="22dp"
+                android:layout_marginBottom="2dp"
                 android:gravity="center_vertical"
                 android:paddingLeft="30dp"
                 android:text="01\t\t200"
@@ -222,7 +227,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="90dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/chatbox"
         android:padding="10dp">

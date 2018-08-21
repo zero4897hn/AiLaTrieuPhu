@@ -107,7 +107,7 @@
                     android:id="@+id/txtNoiDungCauHoi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:text='Truyện ngắn nào của Phạm Duy Tốn đã lên án gay gắt tên quan phủ "lòng lang dạ thú" và bày tỏ niềm cảm thương trước cảnh "nghìn sầu muôn thảm" của nhân dân do thiên tai và do thái độ vô trách nhiệm của kẻ cầm quyền?'
                     android:textColor="@android:color/white"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -156,7 +156,7 @@
             android:id="@+id/btnDapAnD"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/option"
             android:gravity="left"
             android:paddingLeft="30dp"
