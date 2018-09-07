@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GamingDatabaseHelper extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME = "Milionare1805.sqlite";
+    public static final String DATABASE_NAME = "Milionare1806.sqlite";
     private Context context;
     private SQLiteDatabase database;
     private ArrayList<Integer> cauHoiDeDaLay, cauHoiThuongDaLay, cauHoiKhoDaLay;

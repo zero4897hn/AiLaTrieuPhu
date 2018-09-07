@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         removeOldDataFiles("Milionare1802.sqlite");
         removeOldDataFiles("Milionare1803.sqlite");
         removeOldDataFiles("Milionare1804.sqlite");
+        removeOldDataFiles("Milionare1805.sqlite");
         removeOldDataFiles("Score.sqlite");
         File databaseGame = getApplicationContext().getDatabasePath(GamingDatabaseHelper.DATABASE_NAME);
         if (!databaseGame.exists()) {

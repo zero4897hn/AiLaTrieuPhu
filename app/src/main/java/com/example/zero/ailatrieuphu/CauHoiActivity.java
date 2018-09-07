@@ -772,12 +772,8 @@ public class CauHoiActivity extends AppCompatActivity {
                             });
                         }
                         else {
-                            int mocCauHoi;
-                            if (thuTuCauHoi > 10) mocCauHoi = 10;
-                            else if (thuTuCauHoi > 5) mocCauHoi = 5;
-                            else mocCauHoi = 0;
                             playerTheme.stopPlayer();
-                            xuLyThuaCuocVoiNhac(R.raw.question_1_to_5_lose, mocCauHoi);
+                            xuLyThuaCuocVoiNhac(R.raw.question_1_to_5_lose, 0);
                         }
                     }
                     else if (thuTuCauHoi == 5) {
@@ -793,11 +789,7 @@ public class CauHoiActivity extends AppCompatActivity {
                             xuLyTraLoiDungVoiNhac(R.raw.question_5_win);
                         }
                         else {
-                            int mocCauHoi;
-                            if (thuTuCauHoi > 10) mocCauHoi = 10;
-                            else if (thuTuCauHoi > 5) mocCauHoi = 5;
-                            else mocCauHoi = 0;
-                            xuLyThuaCuocVoiNhac(R.raw.question_1_to_5_lose, mocCauHoi);
+                            xuLyThuaCuocVoiNhac(R.raw.question_1_to_5_lose, 0);
                         }
                     }
                     else if (thuTuCauHoi < 10) {
@@ -817,11 +809,7 @@ public class CauHoiActivity extends AppCompatActivity {
                                     xuLyTraLoiDungVoiNhac(R.raw.question_6_to_9_win);
                                 }
                                 else {
-                                    int mocCauHoi;
-                                    if (thuTuCauHoi > 10) mocCauHoi = 10;
-                                    else if (thuTuCauHoi > 5) mocCauHoi = 5;
-                                    else mocCauHoi = 0;
-                                    xuLyThuaCuocVoiNhac(R.raw.question_6_to_10_lose, mocCauHoi);
+                                    xuLyThuaCuocVoiNhac(R.raw.question_6_to_10_lose, 5);
                                 }
                             }
                         });
@@ -843,11 +831,7 @@ public class CauHoiActivity extends AppCompatActivity {
                                     xuLyTraLoiDungVoiNhac(R.raw.question_10_win);
                                 }
                                 else {
-                                    int mocCauHoi;
-                                    if (thuTuCauHoi > 10) mocCauHoi = 10;
-                                    else if (thuTuCauHoi > 5) mocCauHoi = 5;
-                                    else mocCauHoi = 0;
-                                    xuLyThuaCuocVoiNhac(R.raw.question_6_to_10_lose, mocCauHoi);
+                                    xuLyThuaCuocVoiNhac(R.raw.question_6_to_10_lose, 5);
                                 }
                             }
                         });
@@ -869,11 +853,7 @@ public class CauHoiActivity extends AppCompatActivity {
                                     xuLyTraLoiDungVoiNhac(R.raw.question_11_to_14_win);
                                 }
                                 else {
-                                    int mocCauHoi;
-                                    if (thuTuCauHoi > 10) mocCauHoi = 10;
-                                    else if (thuTuCauHoi > 5) mocCauHoi = 5;
-                                    else mocCauHoi = 0;
-                                    xuLyThuaCuocVoiNhac(R.raw.question_11_to_14_lose, mocCauHoi);
+                                    xuLyThuaCuocVoiNhac(R.raw.question_11_to_14_lose, 10);
                                 }
                             }
                         });
@@ -915,11 +895,7 @@ public class CauHoiActivity extends AppCompatActivity {
                                     playerSoundEffect.startPlayerWithOnCompleteListener(R.raw.question_15_win, completionListener);
                                 }
                                 else {
-                                    int mocCauHoi;
-                                    if (thuTuCauHoi > 10) mocCauHoi = 10;
-                                    else if (thuTuCauHoi > 5) mocCauHoi = 5;
-                                    else mocCauHoi = 0;
-                                    xuLyThuaCuocVoiNhac(R.raw.question_15_lose, mocCauHoi);
+                                    xuLyThuaCuocVoiNhac(R.raw.question_15_lose, 10);
                                 }
                             }
                         });
